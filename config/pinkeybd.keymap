@@ -17,6 +17,53 @@
 };
 
 
+/ {
+    combos { compatible = "zmk,combos"; 
+
+        lang {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 5>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
+        fopen {
+            bindings = <&kp LG(N2)>;
+            key-positions = <9 13>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
+       bootloader_R {
+            bindings = <&bootloader>;
+            key-positions = <1 8 44 47>;
+            timeout-ms = <200>;
+        };
+
+       bootloader_L {
+            bindings = <&bootloader>;
+            key-positions = <0 7 38 43>;
+            timeout-ms = <200>;
+        };
+
+        eq {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <8 20 32 34>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <9 21 33>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+     };
+
+};
+
 
 / {
     behaviors {
