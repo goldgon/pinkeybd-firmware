@@ -4,6 +4,8 @@
 #include "pinkeybd-layouts.dtsi"
 //#include <behaviors/default_layer.dtsi>
 
+#define SCROLL_LAYER 2 4
+
 / {
     chosen {
         zmk,kscan = &kscan0;
