@@ -108,7 +108,7 @@
             // |    UNDO        |       CUT     |       COPY    |       PASTE   |       Q       |    TAB        |                  |   PSCRN    |    ' / "      |    = / +     |    \ / |      |    ` / ~      |    INS      |
             // |    L_SHIFT     |               |               |       none    |    SPACE      |    LALT       |                  |   RSHIFT   |   ENTER       |       FUN_L  |               |               |    RCTRL    |
             // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Lower_layer {
+        Lower_layer_1 {
             bindings = <
                 &kp 0x38     &none      &kp UP     &none       &none   &kp PAUSE_BREAK                 &kp TAB          &kp UP          &kp N8        &kp N9         &mkp MB2
                 &kp JP_SEMI  &kp LEFT   &kp GRAVE  &kp GRAVE   &kp MINUS               &kp SCROLLLOCK                 &kp BACKSPACE  &kp SPACE       &kp TAB       &kp ENTER      &kp COMMA
@@ -123,11 +123,11 @@
             // |    UNDO        |       CUT      |       COPY    |       PASTE   |       Q      |    TAB        |                  |      F     |    ' / "    |    = / +       |    \ / |      |    ` / ~    |    INS      |
             // |    L_SHIFT     |                |               |       BT_L    |      SPACE   |    LALT       |                  |   ENTER    |    none     |   R_SHIFT      |               |             |   R_SHIFT   |
             // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Lower2_layer {
+        Lower2_layer_2 {
             bindings = <
-                &none        &kp COMMA    &kp END      &kp LEFT_BRACE       &kp SINGLE_QUOTE    &kp ESC                             &kp L           &kp R        &kp PG_UP       &kp LBKT       &kp RBRC
-                &kp HOME     &kp LS(S)    &kp END      &kp RIGHT_BRACE      &kp U               &kp LCTRL                           &kp BSPC        &kp HOME     &kp PG_DN       &kp END        &kp DEL
-                &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)            &kp Q               &kp TAB                             &kp APOS        &kp EQUAL    &kp BSLH        &kp GRAVE      &kp INS
+               &none        &kp JP_LT      &kp JP_EQUAL   &kp JP_RT  &none    &kp ESC                             &none          &kp JP_PLUS     &none        &kp JP_SLASH  &mkp MB3
+                &none        &kp JP_LPAR    &kp JP_AT      &kp JP_RPAR   &kp MINUS               &kp LCTRL                           &kp JP_QMARK   &kp ENTER  &kp DOUBLE_QUOTES &kp LS(0x87)  &kp LS(0x1e)
+                &none        &kp JP_LBRC    &none          &kp JP_RBRC   &none               &kp TAB                             &kp DELETE          &none           &none         &none         &none
                 &kp LSHIFT                             &mo 5             &kp SPACE           &kp LALT                &kp PSCRN   &kp RSHIFT      &kp ENTER    &none                          &kp RSHIFT
             >;
         };
